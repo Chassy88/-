@@ -1,0 +1,72 @@
+.team-profile {
+  padding: 1rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-subtle);
+  background: var(--surface-elevated);
+}
+
+.team-profile__header {
+  margin-bottom: 0.9rem;
+}
+
+.team-profile__title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.team-profile__desc {
+  margin: 0.35rem 0 0;
+  font-size: 0.78rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+
+.team-profile__grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.team-profile__label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.team-profile__input {
+  width: 100%;
+  padding: 0.7rem 0.75rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+  background: var(--surface);
+  color: var(--text-primary);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.team-profile__input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+.team-profile__current {
+  margin: 0.5rem 0 0;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.team-profile__current strong {
+  color: var(--accent);
+}
+
+@media (min-width: 768px) {
+  .team-profile__grid {
+    grid-template-columns: 1fr 1.2fr;
+    align-items: start;
+  }
+}
